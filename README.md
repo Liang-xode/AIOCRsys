@@ -4,14 +4,14 @@
 
 **基于AI的智能综合测评计算系统**
 
-[![Python](https://img.shields.io/badge/Python-3.12+-blue.svg)](https://www.python.org/)
-[![Vue](https://img.shields.io/badge/Vue-3.x-green.svg)](https://vuejs.org/)
-[![FastAPI](https://img.shields.io/badge/FastAPI-0.104+-teal.svg)](https://fastapi.tiangolo.com/)
-[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+[!\[Python\](https://img.shields.io/badge/Python-3.12+-blue.svg null)](https://www.python.org/)
+[!\[Vue\](https://img.shields.io/badge/Vue-3.x-green.svg null)](https://vuejs.org/)
+[!\[FastAPI\](https://img.shields.io/badge/FastAPI-0.104+-teal.svg null)](https://fastapi.tiangolo.com/)
+[!\[License\](https://img.shields.io/badge/license-MIT-blue.svg null)](LICENSE)
 
 </div>
 
----
+***
 
 ## 📑 目录
 
@@ -30,7 +30,7 @@
 - [配置说明](#配置说明)
 - [常见问题](#常见问题)
 
----
+***
 
 ## 项目简介
 
@@ -42,7 +42,7 @@
 - 📊 **数据分析**: 班级成绩排名和可视化分析
 - 👥 **多角色管理**: 支持管理员、教师、学生三种角色
 
----
+***
 
 ## 核心特性
 
@@ -58,67 +58,67 @@
 - ✅ 会话管理功能
 - ✅ Excel模板字段映射修正
 - ✅ RAG JSON解析增强（重试机制+兜底方案）
-- ✅ 向量切片策略优化（chunk_size=500, overlap=50）
+- ✅ 向量切片策略优化（chunk\_size=500, overlap=50）
 - ✅ 前端API接口补充（uploadMaterial, getMaterials）
 - ✅ **三者格式兼容性验证**（Excel、数据库、JSON）
 - ✅ **统一文档体系**（docs/系统架构与数据规范.md）
 
----
+***
 
 ## 文档中心
 
 ### 📚 核心文档
 
-| 文档名称 | 路径 | 说明 |
-|---------|------|------|
-| 系统架构与数据规范 | [docs/系统架构与数据规范.md](docs/系统架构与数据规范.md) | 完整的系统架构、数据结构、API接口、Excel模板和三者格式映射关系 |
-| RAG端到端业务系统PRD | [.trae/specs/rag-end-to-end-business-system/spec.md](.trae/specs/rag-end-to-end-business-system/spec.md) | 产品需求文档，包含功能需求和验收标准 |
-| RAG端到端业务系统实施计划 | [.trae/specs/rag-end-to-end-business-system/tasks.md](.trae/specs/rag-end-to-end-business-system/tasks.md) | 实施计划，包含任务分解和优先级 |
-| RAG端到端业务系统验证清单 | [.trae/specs/rag-end-to-end-business-system/checklist.md](.trae/specs/rag-end-to-end-business-system/checklist.md) | 验证清单，包含检查点和验收标准 |
+| 文档名称           | 路径                                                                                                                 | 说明                                  |
+| -------------- | ------------------------------------------------------------------------------------------------------------------ | ----------------------------------- |
+| 系统架构与数据规范      | [docs/系统架构与数据规范.md](docs/系统架构与数据规范.md)                                                                             | 完整的系统架构、数据结构、API接口、Excel模板和三者格式映射关系 |
+| RAG端到端业务系统PRD  | [.trae/specs/rag-end-to-end-business-system/spec.md](.trae/specs/rag-end-to-end-business-system/spec.md)           | 产品需求文档，包含功能需求和验收标准                  |
+| RAG端到端业务系统实施计划 | [.trae/specs/rag-end-to-end-business-system/tasks.md](.trae/specs/rag-end-to-end-business-system/tasks.md)         | 实施计划，包含任务分解和优先级                     |
+| RAG端到端业务系统验证清单 | [.trae/specs/rag-end-to-end-business-system/checklist.md](.trae/specs/rag-end-to-end-business-system/checklist.md) | 验证清单，包含检查点和验收标准                     |
 
 ### 📋 测试报告
 
-| 文档名称 | 路径 | 说明 |
-|---------|------|------|
-| 三者格式兼容性测试 | [visual_model/tests/test_format_compatibility.py](visual_model/tests/test_format_compatibility.py) | Excel、数据库、JSON三者格式兼容性测试（14个测试用例） |
-| RAG集成测试 | [visual_model/tests/test_rag_integration.py](visual_model/tests/test_rag_integration.py) | RAG系统集成测试（18个测试用例） |
-| 综评成绩API测试 | [visual_model/tests/test_comprehensive_score_api.py](visual_model/tests/test_comprehensive_score_api.py) | 综评成绩API测试（21个测试用例） |
+| 文档名称      | 路径                                                                                                           | 说明                               |
+| --------- | ------------------------------------------------------------------------------------------------------------ | -------------------------------- |
+| 三者格式兼容性测试 | [visual\_model/tests/test\_format\_compatibility.py](visual_model/tests/test_format_compatibility.py)        | Excel、数据库、JSON三者格式兼容性测试（14个测试用例） |
+| RAG集成测试   | [visual\_model/tests/test\_rag\_integration.py](visual_model/tests/test_rag_integration.py)                  | RAG系统集成测试（18个测试用例）               |
+| 综评成绩API测试 | [visual\_model/tests/test\_comprehensive\_score\_api.py](visual_model/tests/test_comprehensive_score_api.py) | 综评成绩API测试（21个测试用例）               |
 
 ### 📊 历史文档（已归档）
 
 以下文档已被整合到[系统架构与数据规范.md](docs/系统架构与数据规范.md)中，保留用于历史参考：
 
-- [01_数据库结构文档.md](01_数据库结构文档.md)
-- [02_Excel模板结构文档.md](02_Excel模板结构文档.md)
-- [03_API接口对比文档.md](03_API接口对比文档.md)
-- [04_三者字段映射关系表.md](04_三者字段映射关系表.md)
+- [01\_数据库结构文档.md](01_数据库结构文档.md)
+- [02\_Excel模板结构文档.md](02_Excel模板结构文档.md)
+- [03\_API接口对比文档.md](03_API接口对比文档.md)
+- [04\_三者字段映射关系表.md](04_三者字段映射关系表.md)
 
----
+***
 
 ## 模型存放路径
 
 ### OCR模型 (PaddleOCR)
 
-| 模型名称 | 存放路径 | 功能说明 |
-|---------|---------|---------|
-| PP-LCNet_x1_0_doc_ori | `~/.paddlex/official_models/PP-LCNet_x1_0_doc_ori/` | 文档方向分类 |
-| UVDoc | `~/.paddlex/official_models/UVDoc/` | 文档扭曲矫正 |
-| PP-LCNet_x1_0_textline_ori | `~/.paddlex/official_models/PP-LCNet_x1_0_textline_ori/` | 文本行方向分类 |
-| PP-OCRv5_server_det | `~/.paddlex/official_models/PP-OCRv5_server_det/` | 文本检测模型 |
-| PP-OCRv5_server_rec | `~/.paddlex/official_models/PP-OCRv5_server_rec/` | 文本识别模型 |
+| 模型名称                           | 存放路径                                                     | 功能说明    |
+| ------------------------------ | -------------------------------------------------------- | ------- |
+| PP-LCNet\_x1\_0\_doc\_ori      | `~/.paddlex/official_models/PP-LCNet_x1_0_doc_ori/`      | 文档方向分类  |
+| UVDoc                          | `~/.paddlex/official_models/UVDoc/`                      | 文档扭曲矫正  |
+| PP-LCNet\_x1\_0\_textline\_ori | `~/.paddlex/official_models/PP-LCNet_x1_0_textline_ori/` | 文本行方向分类 |
+| PP-OCRv5\_server\_det          | `~/.paddlex/official_models/PP-OCRv5_server_det/`        | 文本检测模型  |
+| PP-OCRv5\_server\_rec          | `~/.paddlex/official_models/PP-OCRv5_server_rec/`        | 文本识别模型  |
 
 **模型总大小**: 约 500MB
 
 ### RAG模型 (Embedding)
 
-| 模型名称 | 存放路径 | 功能说明 |
-|---------|---------|---------|
-| all-MiniLM-L6-v2 | `~/.cache/huggingface/hub/` | 文本向量化嵌入模型 |
-| shibing624/text2vec-base-chinese | `~/.cache/huggingface/hub/` | 中文文本嵌入模型 |
+| 模型名称                             | 存放路径                        | 功能说明      |
+| -------------------------------- | --------------------------- | --------- |
+| all-MiniLM-L6-v2                 | `~/.cache/huggingface/hub/` | 文本向量化嵌入模型 |
+| shibing624/text2vec-base-chinese | `~/.cache/huggingface/hub/` | 中文文本嵌入模型  |
 
 **向量数据库**: `PaddleOCRRAG/data/chroma_db/`
 
----
+***
 
 ## 快速开始
 
@@ -187,30 +187,30 @@ python start.py --dev --no-rag
 
 启动成功后，打开浏览器访问：
 
-| 服务 | 地址 | 说明 |
-|------|------|------|
-| 前端应用 | http://localhost:5173 | Vue 3 前端 |
-| Visual Model API | http://localhost:8001/docs | FastAPI 文档 |
-| RAG API | http://localhost:8010/docs | RAG 服务文档 |
+| 服务               | 地址                           | 说明         |
+| ---------------- | ---------------------------- | ---------- |
+| 前端应用             | <http://localhost:5173>      | Vue 3 前端   |
+| Visual Model API | <http://localhost:8001/docs> | FastAPI 文档 |
+| RAG API          | <http://localhost:8010/docs> | RAG 服务文档   |
 
 #### 4. 测试账号信息
 
-| 用户名 | 密码 | 角色 | 权限说明 |
-|--------|------|------|---------|
-| dev_admin | dev123456 | admin | 开发管理员 - 完全访问权限 |
-| dev_teacher | dev123456 | teacher | 开发教师 - 教师权限 |
-| dev_student | dev123456 | student | 开发学生 - 学生权限 |
+| 用户名          | 密码        | 角色      | 权限说明           |
+| ------------ | --------- | ------- | -------------- |
+| dev\_admin   | dev123456 | admin   | 开发管理员 - 完全访问权限 |
+| dev\_teacher | dev123456 | teacher | 开发教师 - 教师权限    |
+| dev\_student | dev123456 | student | 开发学生 - 学生权限    |
 
 > 💡 **提示**: 开发模式下无需登录，可直接访问所有功能。
 
 ### 命令行参数说明
 
-| 参数 | 说明 |
-|------|------|
-| `--dev` | 开发测试模式，禁用所有认证，设置环境变量 `DEV_MODE=true` 和 `DISABLE_AUTH=true` |
-| `--no-frontend` | 不启动前端服务，仅启动后端API |
-| `--no-rag` | 不启动RAG服务，适用于不需要AI问答功能的场景 |
-| `--help` | 显示帮助信息 |
+| 参数              | 说明                                                         |
+| --------------- | ---------------------------------------------------------- |
+| `--dev`         | 开发测试模式，禁用所有认证，设置环境变量 `DEV_MODE=true` 和 `DISABLE_AUTH=true` |
+| `--no-frontend` | 不启动前端服务，仅启动后端API                                           |
+| `--no-rag`      | 不启动RAG服务，适用于不需要AI问答功能的场景                                   |
+| `--help`        | 显示帮助信息                                                     |
 
 **使用示例：**
 
@@ -238,7 +238,7 @@ cd fronted/front
 npm run dev
 ```
 
----
+***
 
 ## 项目结构
 
@@ -294,7 +294,7 @@ PaddleOCR/
 └── README.md                    # 项目文档
 ```
 
----
+***
 
 ## 技术架构
 
@@ -329,22 +329,23 @@ PaddleOCR/
 
 ### 技术栈
 
-| 层级 | 技术 | 说明 |
-|------|------|------|
-| 前端 | Vue 3 + Element Plus | 渐进式框架 + UI组件库 |
-| 后端 | FastAPI + Tortoise ORM | 高性能异步框架 |
-| OCR | PaddleOCR v5 | 百度开源OCR引擎 |
-| 向量库 | ChromaDB + HNSW | 向量数据库 |
-| LLM | 讯飞星火 | 大语言模型服务 |
-| 嵌入 | Sentence Transformers | 文本嵌入模型 |
+| 层级  | 技术                     | 说明            |
+| --- | ---------------------- | ------------- |
+| 前端  | Vue 3 + Element Plus   | 渐进式框架 + UI组件库 |
+| 后端  | FastAPI + Tortoise ORM | 高性能异步框架       |
+| OCR | PaddleOCR v5           | 百度开源OCR引擎     |
+| 向量库 | ChromaDB + HNSW        | 向量数据库         |
+| LLM | 讯飞星火                   | 大语言模型服务       |
+| 嵌入  | Sentence Transformers  | 文本嵌入模型        |
 
----
+***
 
 ## 核心技术详解
 
 ### 1. 向量化存储技术
 
 #### 原理
+
 将文本转换为高维向量表示，使得语义相似的文本在向量空间中距离更近。
 
 ```
@@ -372,11 +373,11 @@ embedding_function = SentenceTransformerEmbeddingFunction(
 
 #### 切片参数
 
-| 参数 | 默认值 | 说明 |
-|------|--------|------|
-| chunk_size | 500 | 每个切片的字符数 |
-| chunk_overlap | 50 | 切片间重叠字符数 |
-| separators | ["\n\n", "\n", "。"] | 分隔符优先级 |
+| 参数             | 默认值                  | 说明       |
+| -------------- | -------------------- | -------- |
+| chunk\_size    | 500                  | 每个切片的字符数 |
+| chunk\_overlap | 50                   | 切片间重叠字符数 |
+| separators     | \["\n\n", "\n", "。"] | 分隔符优先级   |
 
 #### 切片流程
 
@@ -417,35 +418,35 @@ final_score = base_score × 0.4 + category_bonus × 0.3 + level_bonus × 0.2 + k
 
 #### 类别权重
 
-| 类别 | 权重 |
-|------|------|
-| C1 (科技类) | 1.0 |
-| C2 (体育类) | 0.8 |
-| C3 (文化类) | 0.8 |
+| 类别        | 权重  |
+| --------- | --- |
+| C1 (科技类)  | 1.0 |
+| C2 (体育类)  | 0.8 |
+| C3 (文化类)  | 0.8 |
 | C4 (创新创业) | 0.9 |
 
----
+***
 
 ## API测试
 
 ### 测试结果
 
-| 测试模块 | 测试项数 | 通过数 | 通过率 |
-|---------|---------|-------|-------|
-| 认证API | 12 | 12 | 100% |
-| 学生API | 10 | 10 | 100% |
-| 教师API | 14 | 14 | 100% |
-| 管理员API | 8 | 8 | 100% |
-| 文件管理API | 15 | 15 | 100% |
-| 证书API | 10 | 10 | 100% |
-| AI对话API | 8 | 8 | 100% |
-| 中间件API | 25 | 25 | 100% |
-| 综测计算API | 12 | 12 | 100% |
-| 端到端测试 | 15 | 15 | 100% |
-| **三者格式兼容性** | **14** | **14** | **100%** |
-| **RAG集成测试** | **18** | **18** | **100%** |
-| **综评成绩API测试** | **21** | **21** | **100%** |
-| **总计** | **277** | **277** | **100%** |
+| 测试模块          | 测试项数    | 通过数     | 通过率      |
+| ------------- | ------- | ------- | -------- |
+| 认证API         | 12      | 12      | 100%     |
+| 学生API         | 10      | 10      | 100%     |
+| 教师API         | 14      | 14      | 100%     |
+| 管理员API        | 8       | 8       | 100%     |
+| 文件管理API       | 15      | 15      | 100%     |
+| 证书API         | 10      | 10      | 100%     |
+| AI对话API       | 8       | 8       | 100%     |
+| 中间件API        | 25      | 25      | 100%     |
+| 综测计算API       | 12      | 12      | 100%     |
+| 端到端测试         | 15      | 15      | 100%     |
+| **三者格式兼容性**   | **14**  | **14**  | **100%** |
+| **RAG集成测试**   | **18**  | **18**  | **100%** |
+| **综评成绩API测试** | **21**  | **21**  | **100%** |
+| **总计**        | **277** | **277** | **100%** |
 
 ### 运行测试
 
@@ -475,30 +476,30 @@ cd visual_model
 python -m pytest tests/test_comprehensive_score_api.py -v
 ```
 
----
+***
 
 ## 测试账号
 
 ### 账号列表
 
-| 用户名 | 密码 | 角色 | 权限说明 |
-|--------|------|------|---------|
-| dev_admin | dev123456 | admin | 开发管理员 - 完全访问权限 |
-| dev_teacher | dev123456 | teacher | 开发教师 - 教师权限 |
-| dev_student | dev123456 | student | 开发学生 - 学生权限 |
-| admin | admin123 | admin | 系统管理员 |
-| teacher | teacher123 | teacher | 测试教师 |
-| student_202300502128 | student123 | student | 测试学生 |
+| 用户名                   | 密码         | 角色      | 权限说明           |
+| --------------------- | ---------- | ------- | -------------- |
+| dev\_admin            | dev123456  | admin   | 开发管理员 - 完全访问权限 |
+| dev\_teacher          | dev123456  | teacher | 开发教师 - 教师权限    |
+| dev\_student          | dev123456  | student | 开发学生 - 学生权限    |
+| admin                 | admin123   | admin   | 系统管理员          |
+| teacher               | teacher123 | teacher | 测试教师           |
+| student\_202300502128 | student123 | student | 测试学生           |
 
 ### 权限说明
 
-| 角色 | 可访问功能 |
-|------|-----------|
-| admin | 用户管理、系统设置、规则上传、数据库管理、所有教师和学生功能 |
-| teacher | 学生列表、班级管理、成绩上传、成绩分析、可视化 |
-| student | 个人信息、成绩查看、材料上传、结果列表 |
+| 角色      | 可访问功能                          |
+| ------- | ------------------------------ |
+| admin   | 用户管理、系统设置、规则上传、数据库管理、所有教师和学生功能 |
+| teacher | 学生列表、班级管理、成绩上传、成绩分析、可视化        |
+| student | 个人信息、成绩查看、材料上传、结果列表            |
 
----
+***
 
 ## 配置说明
 
@@ -506,65 +507,65 @@ python -m pytest tests/test_comprehensive_score_api.py -v
 
 #### 综合测评计算表（主表）
 
-| 列标 | 字段名 | 数据类型 | 说明 |
-|------|--------|---------|------|
-| A | 总排名 | Integer | 班级排名 |
-| B | 专业 | String | 专业名称 |
-| C | 班级 | String | 班级名称 |
-| D | 姓名 | String | 学生姓名 |
-| E | 学号 | String | 学生学号（主键） |
-| F | A1—基础分 | Float | 思想道德基础分 |
-| G | A2—附加分 | Float | 思想道德附加分 |
-| H | A3—扣分项 | Float | 思想道德扣分 |
-| I | 思想道德素质(A)总分 | Float | A类总分 |
-| J | 思想道德素质(A)总分% | Float | A类加权分(20%) |
-| K | 学习成绩 | Float | 学业成绩原始分 |
-| L | 学习成绩% | Float | 学业成绩百分比 |
-| M | 学习成绩70% | Float | B类加权分(70%) |
-| N | C1—科技竞赛项目 | Float | 科技竞赛加分 |
-| O | C2—体育竞技项目 | Float | 体育竞技加分 |
-| P | C3—文化类竞赛项目 | Float | 文化竞赛加分 |
-| Q | C4—创新创业实践项目 | Float | 创新创业加分 |
-| R | 素质拓展(C)总分 | Float | C类总分 |
-| S | 素质拓展(C)总分10% | Float | C类加权分(10%) |
-| T | 综合测评总成绩8% | Float | 最终综测成绩 |
-| U | 学生签字 | String | 学生签字确认 |
+| 列标 | 字段名          | 数据类型    | 说明         |
+| -- | ------------ | ------- | ---------- |
+| A  | 总排名          | Integer | 班级排名       |
+| B  | 专业           | String  | 专业名称       |
+| C  | 班级           | String  | 班级名称       |
+| D  | 姓名           | String  | 学生姓名       |
+| E  | 学号           | String  | 学生学号（主键）   |
+| F  | A1—基础分       | Float   | 思想道德基础分    |
+| G  | A2—附加分       | Float   | 思想道德附加分    |
+| H  | A3—扣分项       | Float   | 思想道德扣分     |
+| I  | 思想道德素质(A)总分  | Float   | A类总分       |
+| J  | 思想道德素质(A)总分% | Float   | A类加权分(20%) |
+| K  | 学习成绩         | Float   | 学业成绩原始分    |
+| L  | 学习成绩%        | Float   | 学业成绩百分比    |
+| M  | 学习成绩70%      | Float   | B类加权分(70%) |
+| N  | C1—科技竞赛项目    | Float   | 科技竞赛加分     |
+| O  | C2—体育竞技项目    | Float   | 体育竞技加分     |
+| P  | C3—文化类竞赛项目   | Float   | 文化竞赛加分     |
+| Q  | C4—创新创业实践项目  | Float   | 创新创业加分     |
+| R  | 素质拓展(C)总分    | Float   | C类总分       |
+| S  | 素质拓展(C)总分10% | Float   | C类加权分(10%) |
+| T  | 综合测评总成绩8%    | Float   | 最终综测成绩     |
+| U  | 学生签字         | String  | 学生签字确认     |
 
 #### 加减分说明表（辅助表）
 
-| 列标 | 字段名 | 说明 |
-|------|--------|------|
-| A | 专业 | 学生专业 |
-| B | 班级 | 学生班级 |
-| C | 姓名 | 学生姓名 |
-| D | A1—基础分 | 基础分明细 |
-| E | A2—附加分 | 附加分明细（含备注） |
-| F | A3—扣分项 | 扣分项明细（含备注） |
-| G | C1—科技竞赛项目 | 科技竞赛明细 |
-| H | C2—体育竞技项目 | 体育竞技明细 |
-| I | C3—文化类竞赛项目 | 文化竞赛明细 |
-| J | C4—创新创业实践项目 | 创新创业明细 |
+| 列标 | 字段名         | 说明         |
+| -- | ----------- | ---------- |
+| A  | 专业          | 学生专业       |
+| B  | 班级          | 学生班级       |
+| C  | 姓名          | 学生姓名       |
+| D  | A1—基础分      | 基础分明细      |
+| E  | A2—附加分      | 附加分明细（含备注） |
+| F  | A3—扣分项      | 扣分项明细（含备注） |
+| G  | C1—科技竞赛项目   | 科技竞赛明细     |
+| H  | C2—体育竞技项目   | 体育竞技明细     |
+| I  | C3—文化类竞赛项目  | 文化竞赛明细     |
+| J  | C4—创新创业实践项目 | 创新创业明细     |
 
 #### 学生成绩单（数据源）
 
-| 列标 | 字段名 | 数据类型 | 映射到数据库 |
-|------|--------|---------|-------------|
-| A | 学号 | String | Student.id |
-| B | 姓名 | String | Student.name |
-| C | 班级 | String | Student.class_name |
-| D | 专业名称 | String | Student.major |
-| E | 年级 | String | Student.grade |
-| F | 总分 | Float | AcademicScore.total_score |
-| G | 门数 | Integer | AcademicScore.course_count |
-| H | 总学分 | Float | AcademicScore.total_credits |
-| I | 获得学分 | Float | AcademicScore.earned_credits |
-| J | 算术平均分 | Float | AcademicScore.arithmetic_average |
-| K | 算术平均分排名 | Integer | AcademicScore.arithmetic_average_rank |
-| L | 学分加权平均分 | Float | AcademicScore.weighted_average |
-| M | 学分加权平均分排名 | Integer | AcademicScore.weighted_average_rank |
-| N | 平均学分绩点 | Float | AcademicScore.average_credit_gpa |
-| O | 平均学分绩点排名 | Integer | AcademicScore.average_credit_gpa_rank |
-| P | 不及格门次 | Integer | AcademicScore.failed_course_count |
+| 列标 | 字段名       | 数据类型    | 映射到数据库                                   |
+| -- | --------- | ------- | ---------------------------------------- |
+| A  | 学号        | String  | Student.id                               |
+| B  | 姓名        | String  | Student.name                             |
+| C  | 班级        | String  | Student.class\_name                      |
+| D  | 专业名称      | String  | Student.major                            |
+| E  | 年级        | String  | Student.grade                            |
+| F  | 总分        | Float   | AcademicScore.total\_score               |
+| G  | 门数        | Integer | AcademicScore.course\_count              |
+| H  | 总学分       | Float   | AcademicScore.total\_credits             |
+| I  | 获得学分      | Float   | AcademicScore.earned\_credits            |
+| J  | 算术平均分     | Float   | AcademicScore.arithmetic\_average        |
+| K  | 算术平均分排名   | Integer | AcademicScore.arithmetic\_average\_rank  |
+| L  | 学分加权平均分   | Float   | AcademicScore.weighted\_average          |
+| M  | 学分加权平均分排名 | Integer | AcademicScore.weighted\_average\_rank    |
+| N  | 平均学分绩点    | Float   | AcademicScore.average\_credit\_gpa       |
+| O  | 平均学分绩点排名  | Integer | AcademicScore.average\_credit\_gpa\_rank |
+| P  | 不及格门次     | Integer | AcademicScore.failed\_course\_count      |
 
 ### Visual Model 配置
 
@@ -599,18 +600,18 @@ XUNFEI_API_KEY=your_api_key
 XUNFEI_MODEL_ID=xop3qwen1b7
 ```
 
----
+***
 
 ## ⚠️ 重要说明：双虚拟环境策略
 
 由于 `paddleocr` 和 `langchain/chromadb` 存在依赖冲突，项目采用**双虚拟环境**方案：
 
-| 项目 | 虚拟环境路径 | 环境类型 | 主要依赖 |
-|------|-------------|----------|----------|
+| 项目           | 虚拟环境路径               | 环境类型       | 主要依赖                    |
+| ------------ | -------------------- | ---------- | ----------------------- |
 | Visual Model | `visual_model/venv/` | Conda venv | PaddleOCR, PaddlePaddle |
-| RAG | `.conda/` | Conda | LangChain, ChromaDB |
+| RAG          | `.conda/`            | Conda      | LangChain, ChromaDB     |
 
----
+***
 
 ## 常见问题
 
@@ -627,6 +628,7 @@ visual_model\venv\python.exe -c "import paddleocr; print('OK')"
 ### Q: ChromaDB安装失败怎么办？
 
 推荐使用Conda环境安装：
+
 ```bash
 conda install -p .conda chromadb -c conda-forge -y
 ```
@@ -636,6 +638,7 @@ conda install -p .conda chromadb -c conda-forge -y
 **方法一：使用启动脚本自动处理**
 
 启动脚本会自动检测端口冲突并切换到备用端口：
+
 ```bash
 python start.py
 ```
@@ -671,8 +674,8 @@ curl http://localhost:8010/health
 
 **方法二：访问 API 文档**
 
-- Visual Model API: http://localhost:8001/docs
-- RAG API: http://localhost:8010/docs
+- Visual Model API: <http://localhost:8001/docs>
+- RAG API: <http://localhost:8010/docs>
 
 **方法三：查看启动日志**
 
@@ -722,6 +725,7 @@ python -m pytest tests/test_comprehensive_score_api.py -v
 ### Q: 开发模式下认证是否真的被禁用？
 
 是的，使用 `python start.py --dev` 启动时：
+
 - 环境变量 `DEV_MODE=true`
 - 环境变量 `DISABLE_AUTH=true`
 - 后端服务会跳过所有认证中间件
@@ -737,26 +741,26 @@ python -m pytest tests/test_comprehensive_score_api.py -v
 3. **测试覆盖**: 14个测试用例验证三者格式兼容性
 4. **统一文档**: [docs/系统架构与数据规范.md](docs/系统架构与数据规范.md) 详细说明了三者映射关系
 
----
+***
 
 ## 许可证
 
 MIT License
 
----
+***
 
 ## 联系方式
 
 如有问题或建议，请提交 Issue 或 Pull Request。
 
----
+***
 
 <div align="center">
 
 **🌟 如果这个项目对你有帮助，请给个 Star！ 🌟**
 
-**最后更新**: 2026-03-08  
-**版本**: v2.5.0  
+**最后更新**: 2026-03-08\
+**版本**: v2.5.0\
 **状态**: ✅ 生产就绪
 
 </div>

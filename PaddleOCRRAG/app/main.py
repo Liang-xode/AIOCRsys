@@ -13,6 +13,7 @@ from pathlib import Path
 from datetime import datetime
 import threading
 
+sys.path.insert(0, str(Path(__file__).parent.parent))
 sys.path.insert(0, str(Path(__file__).parent.parent.parent))
 
 from shared_utils.unified_logger import setup_logging, get_logger
